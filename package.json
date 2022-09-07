@@ -1,0 +1,24 @@
+{
+  "name": "mjukvarukvalitet-workshop1",
+  "version": "1.0.0",
+  "description": "1DV610 - workshop1",
+  "type": "module",
+  "browser": "src/js/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "npx eslint ./src || exit 0",
+    "lint:fix": "npx eslint ./src --fix || exit 0"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Farzad Fahiminia <ff222cb@student.lnu.se, Fredrik Eriksson <ferth09@student.lnu.se>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.4",
+    "vite": "^3.0.9"
+  }
+}
