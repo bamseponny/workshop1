@@ -8,6 +8,11 @@ form.addEventListener('submit', (event) => {
   event.preventDefault()
   codeOutput.innerHTML = ''
 
-  codeOutput.append(codeInput.value)
-  console.log(typeof codeInput.value)
+  const codeLines = codeInput.value.split('\n')
+  const codeLinesCount = codeLines.length
+
+  // codeOutput.append(codeInput.value)
+  codeOutput.append('Number of code lines: ' + codeLinesCount)
+  console.log(codeInput.value)
+  console.log(codeLinesCount)
 })
