@@ -8,14 +8,14 @@
 
 const form = document.querySelector('#code-form')
 const codeInput = document.querySelector('#code-input')
-const codeOutput = document.querySelector('#code-output')
+const divResultOutput = document.querySelector('#result-output')
 
 form.addEventListener('submit', (event) => {
   event.preventDefault()
-  codeOutput.innerHTML = ''
+  divResultOutput.innerHTML = ''
 
   const codeLines = codeInput.value.split('\n')
   const codeLinesCount = codeLines.length
 
-  codeOutput.append('Number of code lines: ' + codeLinesCount)
+  divResultOutput.append('Number of code lines: ' + codeLinesCount)
 })
