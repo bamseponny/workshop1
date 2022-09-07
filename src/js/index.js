@@ -1,4 +1,10 @@
-console.log('Hello!')
+/**
+ * The main script file of the application.
+ *
+ * @author Farzad Fahiminia <ff222cb@student.lnu.se>
+ * @author Fredrik Eriksson <ferth09@student.lnu.se>
+ * @version 1.0.0
+ */
 
 const form = document.querySelector('#code-form')
 const codeInput = document.querySelector('#code-input')
@@ -11,8 +17,5 @@ form.addEventListener('submit', (event) => {
   const codeLines = codeInput.value.split('\n')
   const codeLinesCount = codeLines.length
 
-  // codeOutput.append(codeInput.value)
   codeOutput.append('Number of code lines: ' + codeLinesCount)
-  console.log(codeInput.value)
-  console.log(codeLinesCount)
 })
